@@ -3,7 +3,7 @@ Easily label sound datasets!
 
 ## Motivation
 
-At my [startup](https://ailabs.com.tr), we are running ML projects dealing with audio files. We need a simple yet effective sound-labelling utility and user interface. I wrote label-snd is just for this purpose, and I'm opensourcing it for use by others.
+At my [startup](https://ailabs.com.tr), we are running ML projects dealing with audio files. We need a simple yet effective sound-labelling utility and user interface. I wrote label-snd is just for this purpose, and I'm opensourcing it for use by others. It might be easily used to annotate datasets for neural text-to-speech, speech recognition or sound classification.
 
 ## How to use
  * From the `File` menu, click `Select audio folder...` and choose a directory containing `.wav` files. `label-snd` will automatically find all the `.wav` files to add into the list, starting to play the first one.
@@ -14,8 +14,20 @@ At my [startup](https://ailabs.com.tr), we are running ML projects dealing with 
 ## Dependencies
 The only dependency you need to install is `wxpython`. I specifically avoided using `tkinter` because it's not accessible to screen readers.
 
-`pip install wxpython`
+ * `pip install wxpython`
 
+Now, you can simply run `label.snd.py` to launch UI:
+
+ * `git clone https://monatis/label-snd.git`
+ * `cd label-snd`
+ * `python label-snd.py`
+
+ Or, you can produce an executable with `pyinstaller` if you want to do so:
+
+ * `pip install pyinstaller`
+ * `pyinstaller label-snd.py`
+ * Find the executable in `dist/label-snd`.
+ 
 ## Limitations
 I tested this utility on Windows, and I expect it to run on Mac, as well. However, I haven't tested it on any Linux distribution. Please file an issue if you can test it on Linux.
 
