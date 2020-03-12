@@ -18,7 +18,7 @@ The only dependency you need to install is `wxpython`. I specifically avoided us
 
 Now, you can simply run `label.snd.py` to launch UI:
 
- * `git clone https://monatis/label-snd.git`
+ * `git clone https://github.com/monatis/label-snd.git`
  * `cd label-snd`
  * `python label-snd.py`
 
@@ -27,7 +27,7 @@ Now, you can simply run `label.snd.py` to launch UI:
  * `pip install pyinstaller`
  * `pyinstaller label-snd.py`
  * Find the executable in `dist/label-snd`.
- 
+
 ## Limitations
 I tested this utility on Windows, and I expect it to run on Mac, as well. However, I haven't tested it on any Linux distribution. Please file an issue if you can test it on Linux.
 
